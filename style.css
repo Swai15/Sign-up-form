@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  /* grid-template-columns: auto auto; */
+  flex-direction: row;
+  /* 
+  background: grey; */
+}
+
+.left {
+  height: 100vh;
+  width: 40%;
+  background: url(./images/Bladerunner.jpg);
+  background-size: auto 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.right {
+  justify-content: right;
+  height: 100vh;
+  width: 60vw;
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* LEFT */
+.logo-container, img {
+  height: 100px;
+  background: rgb(255, 255, 255, 0.2);
+  overflow: hidden;
+
+}
+
+.logo-container img {
+  margin-left: 35%;
+}
+
+@media screen and (max-width: 700px) {
+  .logo-container img {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 905px) {
+  .logo-container img {
+    margin-left: 40%;
+  }
+}
+
+.logo-container {
+  margin-top: 200px;
+}
+
+/* RIGHT */
+
+/* Top section */
+
+.description {
+  height: 30vh;
+  background: rgb(236, 236, 236);
+  font-weight: 700;
+}
+
+.description ul {
+  padding-top: 50px;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+@Media screen and (max-width: 770px) {
+  .description ul {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+}
+
+ul li {
+  padding-bottom: 5px;
+}
+
+ul li:before {
+  content: "★ ";
+  color: rgb(167, 151, 65);
+}
+
+
+/* MIDDLE FORM SECTION */
+
+form {
+  background: rgb(247, 247, 247);
+  box-shadow: 0px 1px 4px black;
+}
+
+fieldset {
+  border: 0;
+}
+
+form h2 {
+  font-size: 20px;
+  margin-left: 22px;
+  font-weight: 600;
+}
+
+.fieldset-container {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.fieldset-container div {
+  padding-bottom: 20px;
+}
+
+.fieldset-contents {
+  padding-top: 30px;
+}
+
+.fieldset-contents.two {
+  padding-left: 50px;
+}
+
+form input {
+  border: 1px rgba(48, 48, 48, 0.322) solid;
+  border-radius: 4px;
+  width: 150px;
+}
+
+@media screen and (min-width: 700px) {
+  form input {
+    width: 250px;
+  }
+}
+
+form input:focus {
+  outline: none;
+  border: 1px rgb(0, 112, 146) solid;
+  box-shadow: 0px 1px 2px black;
+}
+
+/* Last section */
+
+button {
+  margin: 30px;
+  font-size: 15px;
+  border-radius: 7px;
+  background: rgb(218, 142, 29);
+  color: white;
+  height: 45px;
+  width: 230px;
+}
+
+button:hover {
+  font-size: 16px;
+  background: rgb(173, 113, 24);
+}
+
+.last-section p a:hover {
+  color: rgb(0, 95, 173);
+}
+
+.last-section p a:active {
+  color: rgb(236, 104, 104);
+}
+
+.last-section p {
+  margin-left: 30px;
+}

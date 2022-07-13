@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Sign up page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo-container">
+        <img src="./images/cup.png" alt="">
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <!-- first section -->
+    <div class="right">
+      <section class="description">
+        <ul>
+          <li>Welcome to the winter brawl championship of 2018</li>
+          <li>Ensure you meet the requirements before seeking to apply</li>
+          <li>Qualified and interested replicants are expected to create an account before the end of the month</li>
+        </ul>
+      </section>
+
+      <!-- middle section -->
+      <form action="">
+        <h2>Let's do this</h2>
+        <fieldset class="fieldset-container">
+          <fieldset class="fieldset-contents one">
+            <div>
+              <label for="firstName">FIRST NAME</label><br>
+              <input type="text" id="firstName" minlength="3">
+            </div>
+            <div>
+              <label for="email">EMAIL</label><br>
+              <input type="email" id="email" placeholder="johndoe@gmail.com">
+            </div>
+            <div>
+              <label for="password">PASSWORD</label><br>
+              <input type="text" id="password" class="error" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset-contents two">
+            <div>
+              <label for="lastName">LAST NAME</label><br>
+              <input type="text" id="lastName">
+            </div>
+            <div>
+              <label for="phone-number">PHONE NUMBER</label><br>
+              <input type="number" id="phone-number">
+            </div>
+            <div>
+              <label for="confirm-password">CONFIRM PASSWORD</label><br>
+              <input type="password" id="confirm-password" class="error" required>
+            </div>
+          </fieldset>
+        </fieldset>
+
+      </form>
+
+      <section class="last-section">
+        <button id="button">Create account</button><br>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </section>
+
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
