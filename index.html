@@ -37,38 +37,47 @@
           <fieldset class="fieldset-contents one">
             <div>
               <label for="firstName">FIRST NAME</label><br>
-              <input type="text" id="firstName" minlength="3">
+              <input type="text" id="firstName" minlength="3" required>
             </div>
             <div>
               <label for="email">EMAIL</label><br>
-              <input type="email" id="email" placeholder="johndoe@gmail.com">
+              <input type="email" id="email" placeholder="johndoe@gmail.com" required
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
             </div>
             <div>
               <label for="password">PASSWORD</label><br>
-              <input type="text" id="password" class="error" required>
+              <input type="password" id="password" class="error one" required minlength="6" maxlength="10">
             </div>
+            <div>
+              <button id="button" onclick="return checkPassword()">Proceed</button>
+            </div>
+
           </fieldset>
 
           <fieldset class="fieldset-contents two">
             <div>
               <label for="lastName">LAST NAME</label><br>
-              <input type="text" id="lastName">
+              <input type="text" id="lastName" required>
             </div>
             <div>
               <label for="phone-number">PHONE NUMBER</label><br>
-              <input type="number" id="phone-number">
+              <input type="tel" id="phone-number" required>
             </div>
             <div>
               <label for="confirm-password">CONFIRM PASSWORD</label><br>
-              <input type="password" id="confirm-password" class="error" required>
+              <input type="password" id="confirm-password" class="error two" required>
             </div>
+
+
+
+
           </fieldset>
         </fieldset>
 
       </form>
 
       <section class="last-section">
-        <button id="button">Create account</button><br>
+        <br>
         <p>Already have an account? <a href="#">Log in</a></p>
       </section>
 
